@@ -49,3 +49,40 @@ body{
     width: 20vw;
     margin: 5.14vh 0;
 }
+#information{
+    color: white;
+    width: 100vw;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    position: absolute;
+    top: 40vw;
+    margin: 0;
+}
+.info{
+    font-family: "Franklin Gothic Book";
+    font-size: 20pt;
+    line-height: 5.97vh;
+   /* width: 100vw;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    position: absolute;
+    top: 40vw;
+    margin: 0;*/
+}
+
+#bottom{
+    font-family: "Franklin Gothic Book";
+    font-size: 16pt;
+    background-color:white;
+    color: rgb(217,215,218);
+    line-height: 6.60vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    position: absolute;
+    top:66vw;
+}
