@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Franklin Gothic Demi";
+    src: url(./img/font/Franklin\ Gothic\ Demi\ Regular.ttf);
+}
+@font-face {
+    font-family: "Franklin Gothic Book";
+    src: url(./img/font/Franklin\ Gothic\ Book\ Regular.ttf)
+}
+
+body{
+    background: rgb(0, 0, 0);
+    margin: 0;
+}
+
+#navbar{
+    font-family: "Franklin Gothic Demi";
+    font-size: 24pt;
+    color: white;
+    line-height: 5.97vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+
+#navbar *{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 8.54vw;
+}
+
+.button p{
+    padding: 0 3.68vw 0 0;
+}
+
+#logo{
+    width: 1.3em;
+    height: 1.3em;
+    margin: 5.14vh 0;
+    background-color: rgb(141, 94, 243);
+}
+
+#search{
+    background: url(./img/textbox/search.png) no-repeat center / contain;
+    height: 1.3em;
+    width: 20vw;
+    margin: 5.14vh 0;
+}
