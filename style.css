@@ -10,45 +10,65 @@
 body{
     background: rgb(0, 0, 0);
     margin: 0;
+    overflow-x: hidden;
 }
 
 #navbar{
     font-family: "Franklin Gothic Demi";
-    font-size: 24pt;
+    font-size: 6vmin;
     color: white;
-    line-height: 5.97vh;
+    height: 20vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: relative;
+    left: 0;
     top: 0;
     margin: 0;
 }
 
-#navbar *{
-    display: flex;
-    flex-direction: row;
+#logo, .word{
     position: relative;
     left: 8.54vw;
 }
 
-.button p{
-    padding: 0 3.68vw 0 0;
+#logo, .word, #search{
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
 }
 
 #logo{
-    width: 1.3em;
-    height: 1.3em;
-    margin: 5.14vh 0;
-    background-color: rgb(141, 94, 243);
+    background: url(./img/btn/piggyPal_logo.png) no-repeat center / contain;
+    width: 52px;
+    height: 52px;
+    padding: 0 14px 0 0;
+}
+
+.word{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#name{
+    padding: 0 5.9vw 0 0;
+}
+
+#home, #project, #aboutus{
+    padding: 0 4.17vw 0 0;
 }
 
 #search{
     background: url(./img/textbox/search.png) no-repeat center / contain;
-    height: 1.3em;
-    width: 20vw;
-    margin: 5.14vh 0;
+    height: 48px;
+    width: 196px;
+    position: absolute;
+    right: 8.54vw;
 }
+
+/*don't change*/
 #information{
     color: white;
     display: flex;
