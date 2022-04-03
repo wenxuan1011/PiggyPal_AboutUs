@@ -13,6 +13,7 @@ body{
     overflow-x: hidden;
 }
 
+/*top bar part*/
 #navbar{
     font-family: "Franklin Gothic Demi";
     font-size: 6vmin;
@@ -68,98 +69,47 @@ body{
     right: 8.54vw;
 }
 
-/*don't change*/
-#information{
-    color: white;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-
-}
-.line{
-    background-color:rgb(240,94,237);
-    width:100px;
-    height:7px;
-    position: absolute;
-    top: 43vw;
-    margin: 0;
-}
-.mot{
-    font-family: "Franklin Gothic Demi";
-    font-size: 24pt;
-    line-height: 0vh;
-    width:100vw;
-    display: flex;
-    align-items:center;
-    flex-direction:column;
-    position: absolute;
-    top: 40vw;
-    margin: 0;
-}
-.cu{
-    background:url(./img/btn/contactUs.png);
-    background-size:cover;
-    position:absolute;
-    top:55vw;
-    height:48px;
-    width:196px;
-}
-.info{
-    font-family: "Franklin Gothic Book";
-    font-size: 20pt;
-    line-height: 0vh;
-    width:100vw;
-    display: flex;
-    align-items:center;
-    flex-direction:column;
-    position: absolute;
-    top: 45vw;
-    margin: 0;
-}
-
+/*picture part*/
 .pic{
-    display: flex;
-    justify-content: space-around;
     width: 100vw;
-    height: 0vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    position: relative;
+    top: 0;
     z-index: -1;
 }
 
 .people{
-    width: 17.22vw;
-    height: 68vh;
-    opacity: 1;
+    width: 25.22vw;
+    height: auto;
     position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 3.995vw;
+    left: -6.5125vw;
 }
 
 #zhuang{
     background: url(./img/nameCard/Zhuang.png) no-repeat center / contain;
-    top: -7.22vw;
-    left: -9.17vw;
 }
 
 #lu{
     background: url(./img/nameCard/Lu.png) no-repeat center / contain;
-    top: -7.22vw;
-    left: -4.58vw;
 }
 
 #shen{
     background: url(./img/nameCard/Shen.png) no-repeat center / contain;
-    top: -7.22vw;
-    left: 0vw;
 }
 
 #huang{
     background: url(./img/nameCard/Huang.png) no-repeat center / contain;
-    top: -7.22vw;
-    left: 9.17vw;
 }
 
 #tu{
     background: url(./img/nameCard/Tu.png) no-repeat center / contain;
-    top: -7.22vw;
-    left: 13.75vw;
 }
 
 #arrow-left, #arrow-right{
@@ -179,6 +129,62 @@ body{
     right: 2.92%;
 }
 
+/*information part*/
+#information{
+    width: 100vw;
+    height: 70vh; /*要加位子*/
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.mot{
+    font-family: "Franklin Gothic Demi";
+    font-size: 24pt;
+    line-height: 0vh;
+    width:100vw;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    position: absolute;
+    top: 40vw;
+    margin: 0;
+}
+
+.line{
+    background-color:rgb(240,94,237);
+    width:100px;
+    height:7px;
+    position: absolute;
+    top: 43vw;
+    margin: 0;
+}
+
+.info{
+    font-family: "Franklin Gothic Book";
+    font-size: 20pt;
+    line-height: 0vh;
+    width:100vw;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    position: absolute;
+    top: 45vw;
+    margin: 0;
+}
+
+.cu{
+    background:url(./img/btn/contactUs.png);
+    background-size:cover;
+    position:absolute;
+    top:55vw;
+    height:48px;
+    width:196px;
+}
+
+/*bottom info part*/
 #bottom{
     font-family: "Franklin Gothic Book";
     font-size: 16pt;
