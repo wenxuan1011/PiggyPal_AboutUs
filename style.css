@@ -81,7 +81,7 @@ body{
     width:100px;
     height:7px;
     position: absolute;
-    top: 38vw;
+    top: 43vw;
     margin: 0;
 }
 .mot{
@@ -93,7 +93,7 @@ body{
     align-items:center;
     flex-direction:column;
     position: absolute;
-    top: 35vw;
+    top: 40vw;
     margin: 0;
 }
 .cu{
@@ -102,11 +102,7 @@ body{
     position:absolute;
     top:55vw;
     height:48px;
-    width:196px;/*
-    display: flex;
-    justify-content:center;
-    align-items:center;*/
-
+    width:196px;
 }
 .info{
     font-family: "Franklin Gothic Book";
@@ -117,8 +113,70 @@ body{
     align-items:center;
     flex-direction:column;
     position: absolute;
-    top: 40vw;
+    top: 45vw;
     margin: 0;
+}
+
+.pic{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 0vw;
+    z-index: -1;
+}
+
+.people{
+    width: 17.22vw;
+    height: 68vh;
+    opacity: 1;
+    position: relative;
+}
+
+#zhuang{
+    background: url(./img/nameCard/Zhuang.png) no-repeat center / contain;
+    top: -7.22vw;
+    left: -9.17vw;
+}
+
+#lu{
+    background: url(./img/nameCard/Lu.png) no-repeat center / contain;
+    top: -7.22vw;
+    left: -4.58vw;
+}
+
+#shen{
+    background: url(./img/nameCard/Shen.png) no-repeat center / contain;
+    top: -7.22vw;
+    left: 0vw;
+}
+
+#huang{
+    background: url(./img/nameCard/Huang.png) no-repeat center / contain;
+    top: -7.22vw;
+    left: 9.17vw;
+}
+
+#tu{
+    background: url(./img/nameCard/Tu.png) no-repeat center / contain;
+    top: -7.22vw;
+    left: 13.75vw;
+}
+
+#arrow-left, #arrow-right{
+    width: 4.17%;
+    height: 4.17%;
+    position: absolute;
+    top: 40%;
+}
+
+#arrow-left{
+    background: url(./img/btn/arrowLeft.png) no-repeat top / contain;
+    left: 2.92%;
+}
+
+#arrow-right{
+    background: url(./img/btn/arrowRight.png) no-repeat top / contain;
+    right: 2.92%;
 }
 
 #bottom{
