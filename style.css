@@ -19,7 +19,7 @@ body{
 /*top bar part*/
 #navbar{
     font-family: "Franklin Gothic Demi";
-    font-size: 6vmin;
+    font-size: 2.5vmax;
     color: white;
     height: 20vh;
     width: 100vw;
@@ -45,9 +45,11 @@ body{
 
 #logo{
     background: url(./img/btn/piggyPal_logo.png) no-repeat center / contain;
-    width: 52px;
-    height: 52px;
-    padding: 0 14px 0 0;
+    width: 9vh;
+    height: 9vh;
+    max-width: 52px;
+    max-height: 52px;
+    padding: 0 14pt 0 0;
 }
 
 .word{
@@ -61,13 +63,41 @@ body{
 }
 
 #home, #project, #aboutus{
-    padding: 0 4.17vw 0 0;
+    margin: 0 4.17vw 0 0;
+    padding: 8pt 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button::after {
+    content: '';
+    width: 69px;
+    height: 6px;
+    display: none;
+    background-color: rgb(240,94,237);
+    position: absolute;
+    bottom: 26px;
+}
+
+#aboutus::after{
+    display: block;
+}
+
+#home:hover::after, #project:hover::after{
+    display: block;
+}
+
+.button:hover, #logo:hover, #name:hover{
+    cursor: pointer;
 }
 
 #search{
     background: url(./img/textbox/search.png) no-repeat center / contain;
-    height: 48px;
-    width: 196px;
+    height: 9vh;
+    width: 18vw;
+    max-height: 48px;
+    max-width: 196px;
     position: absolute;
     right: 8.54vw;
 }
@@ -80,8 +110,7 @@ body{
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 10vh;
-    z-index: -1;
+    top: 40px;
 }
 
 .people{
@@ -93,47 +122,52 @@ body{
     transform: translateY(-50%);
 }
 
-#lu    { background: url(./img/nameCard/Lu.png) no-repeat center / contain; left: -9.03%; }
-#shen  { background: url(./img/nameCard/Shen.png) no-repeat center / contain; left: 16.18%; }
-#zhuang{ background: url(./img/nameCard/Zhuang.png) no-repeat center / contain; left: 41.39%; }
-#huang { background: url(./img/nameCard/Huang.png) no-repeat center / contain; left: 66.6%; }
-#tu    { background: url(./img/nameCard/Tu.png) no-repeat center / contain; left: 91.81%; }
+#tu    { background: url(./img/photo/Tu.png) no-repeat center / contain; left: -9.03%; }
+#shen  { background: url(./img/photo/Shen.png) no-repeat center / contain; left: 16.18%; }
+#zhuang{ background: url(./img/photo/Zhuang.png) no-repeat center / contain; left: 41.39%; }
+#huang { background: url(./img/photo/Huang.png) no-repeat center / contain; left: 66.6%; }
+#lu    { background: url(./img/photo/Lu.png) no-repeat center / contain; left: 91.81%; }
+
 
 #arrow-left, #arrow-right{
     width: 8vw;
     height: 8vh;
     position: absolute;
     top: 26vh;
+    opacity: 0.75;
 }
 
 #arrow-left{
-    background: url(./img/btn/arrowLeft.png) no-repeat top / contain;
+    background: url(./img/btn/arrowLeft_hover.png) no-repeat top / contain;
     left: 2.92vw;
 }
 
 #arrow-right{
-    background: url(./img/btn/arrowRight.png) no-repeat top / contain;
+    background: url(./img/btn/arrowRight_hover.png) no-repeat top / contain;
     right: 2.92vw;
+}
+
+#arrow-left:hover, #arrow-right:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 
 /*information part*/
 #information{
     width: 100vw;
-    height: 70vh;
+    height: auto;
     color: white;
     display: flex;
     flex-direction:column;
     align-items: center;
     position: relative;
-    top: 20vh;
+    top: 132px;
 }
 
 #mot{
     font-family: "Franklin Gothic Demi";
     font-size: 6vmin;
-    position: relative;
-    top: 15%;
     margin: 0 0 18px 0;
 }
 
@@ -141,34 +175,70 @@ body{
     background-color:rgb(240,94,237);
     width: 150px;
     height:7px;
-    position: relative;
-    top: 15%;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 }
 
 .info_box{
     font-family: "Franklin Gothic Book";
     font-size: 5vmin;
     width:100vw;
-    height: 25%;
+    height: auto;
     display: flex;
     flex-direction:column;
     align-items:center;
-    position: relative;
-    top: 20%;
 }
 
 .info{
     margin: 0;
 }
 
+
+/*group_pic part*/
+.group{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 224px;
+}
+
+.group_pic{
+    background: url(./img/photo/group.png) no-repeat center / contain;
+    width: 68.48%;
+    height: 100%;
+    transition: 0.75s;
+    z-index: 0;
+}
+
 .cu{
     background: url(./img/btn/contactUs.png) no-repeat center / contain;
-    height:48px;
-    width:196px;
-    position:relative;
-    top: 30%;
+    height: 9vh;
+    width: 18vw;
+    max-height: 48px;
+    max-width: 196px;
+    transition: 0.75s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
 }
+
+.cu a{
+    display: flex;
+    height: 9vh;
+    width: 18vw;
+    max-height: 48px;
+    max-width: 196px;
+}
+
+/*
+.group_pic:hover{
+    opacity: 0.5;
+    z-index: 0;
+}*/
 
 
 /*bottom info part*/
@@ -176,17 +246,21 @@ body{
     font-family: "Franklin Gothic Book";
     font-size: 4vmin;
     background-color:white;
-    color: black;
+    color: rgb(123, 123, 123);
     width: 100vw;
-    height: 10vh;
+    height: 75pt;
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
     position: relative;
-    top: 35vh;
+    top: 316px;
 }
 
 #bottom p{
     margin: 0;
+}
+
+#bottom a{
+    color: rgb(123, 123, 123);
 }
