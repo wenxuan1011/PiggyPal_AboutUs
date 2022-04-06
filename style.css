@@ -118,15 +118,37 @@ body{
     height: 60vh;
     position: absolute;
     display: flex;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-#tu    { background: url(./img/photo/Tu.png) no-repeat center / contain; left: -9.03%; }
-#shen  { background: url(./img/photo/Shen.png) no-repeat center / contain; left: 16.18%; }
-#zhuang{ background: url(./img/photo/Zhuang.png) no-repeat center / contain; left: 41.39%; }
-#huang { background: url(./img/photo/Huang.png) no-repeat center / contain; left: 66.6%; }
-#lu    { background: url(./img/photo/Lu.png) no-repeat center / contain; left: 91.81%; }
+#tu_back{ 
+    background: url(./img/nameCard/Tu.png) no-repeat center / contain; left: -9.03%; 
+    display: none;
+}
+#tu{background: url(./img/photo/Tu.png) no-repeat center / contain; left: -9.03%;}
+
+#shen_back{
+    background: url(./img/nameCard/Shen.png) no-repeat center / contain; left: 16.18%;
+    display: none;
+}
+#shen{background: url(./img/photo/Shen.png) no-repeat center / contain; left: 16.18%;}
+
+#zhuang_back{ 
+    background: url(./img/nameCard/Zhuang.png) no-repeat center / contain; left: 41.39%; 
+    display: none;
+}
+#zhuang{background: url(./img/photo/Zhuang.png) no-repeat center / contain; left: 41.39%;}
+
+#huang_back{
+    background: url(./img/nameCard/Huang.png) no-repeat center / contain; left: 66.6%;
+    display: none;    
+}
+#huang {background: url(./img/photo/Huang.png) no-repeat center / contain; left: 66.6%;}
+
+#lu_back{
+    background: url(./img/nameCard/Lu.png) no-repeat center / contain; left: 91.81%;
+    display: none;
+}
+#lu{background: url(./img/photo/Lu.png) no-repeat center / contain; left: 91.81%;}
 
 
 #arrow-left, #arrow-right{
@@ -135,6 +157,7 @@ body{
     position: absolute;
     top: 26vh;
     opacity: 0.75;
+    z-index: 2;
 }
 
 #arrow-left{
@@ -234,11 +257,10 @@ body{
     max-width: 196px;
 }
 
-/*
+
 .group_pic:hover{
-    opacity: 0.5;
-    z-index: 0;
-}*/
+    opacity: 0.5 !important;
+}
 
 
 /*bottom info part*/
