@@ -137,7 +137,7 @@ $('#arrow-right').click(function(){
         return delay(1);
     }).then(function(){
         picrow[4]=buffer;
-        return delay(400);
+        return delay(1);
     }).then(function(){
         for(var i=0; i<5; i++){
         $(`#${namerow[i]}`).css('background',`url(./img/photo/${picrow[i]}.png) no-repeat center / contain`);
