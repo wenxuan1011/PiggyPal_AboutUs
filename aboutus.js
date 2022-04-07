@@ -112,18 +112,17 @@ var delay = function(s){
     });
   };
 
-$('#arrow-left').click(function(){
+$('#arrow-right').click(function(){
     delay().then(function(){
         $("#tail").css('background',`url(./img/photo/${picrow[0]}.png)no-repeat center / contain`);
         $("#tail_back").css('background',`url(./img/nameCard/${picrow[0]}.png)no-repeat center / contain`);
         for(var i=0;i<5;i++){$(`#${namerow[i]}`).css("transition-duration", "0s");$(`#${namerow[i]}_back`).css("transition-duration", "0s");}
         $('.people').animate({left:'-=25.21%'});
-        for(var i=0;i<5;i++){$(`#${namerow[i]}`).css("transition-duration", "0s");$(`#${namerow[i]}_back`).css("transition-duration", "0s");}
         console.log("left-move");
         return delay(400);
     }).then(function(){
         buffer=namerow[0];
-        return delay(10);
+        return delay(1);
     }).then(function(){
         for(var i=0;i<5;i++){namerow[i]=namerow[i+1];}
         return delay(1);
@@ -151,7 +150,7 @@ $('#arrow-left').click(function(){
         console.log(picrow[i]);
         console.log(picposition[i]);
         }
-        return delay(1500);
+        return delay(0);
     })
     
     $('#head').css("left","-34.31%")
@@ -160,7 +159,7 @@ $('#arrow-left').click(function(){
     $('#tail_back').css("left","-34.31%")
     
 })
-$('#arrow-right').click(function(){
+$('#arrow-left').click(function(){
     delay().then(function(){
         $("#head").css('background',`url(./img/photo/${picrow[4]}.png)no-repeat center / contain`);
         $("#head_back").css('background',`url(./img/nameCard/${picrow[4]}.png)no-repeat center / contain`);
@@ -170,7 +169,7 @@ $('#arrow-right').click(function(){
         return delay(400);
     }).then(function(){
         buffer=namerow[4];
-        return delay(10);
+        return delay(1);
     }).then(function(){
         for(var i=0;i<5;i++){namerow[4-i]=namerow[3-i];}
         return delay(1);
@@ -185,7 +184,7 @@ $('#arrow-right').click(function(){
         return delay(1);
     }).then(function(){
         picrow[0]=buffer;
-        return delay(400);
+        return delay(1);
     }).then(function(){
         for(var i=0; i<5; i++){
         $(`#${namerow[i]}`).css('background',`url(./img/photo/${picrow[i]}.png) no-repeat center / contain`);
@@ -197,7 +196,7 @@ $('#arrow-right').click(function(){
         console.log(picrow[i]);
         console.log(picposition[i]);
         }
-        return delay(1500);
+        return delay(0);
     })
     
     $('#head').css("left","-34.31%")
