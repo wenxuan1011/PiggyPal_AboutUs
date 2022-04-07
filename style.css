@@ -62,17 +62,20 @@ body{
     padding: 0 5.9vw 0 0;
 }
 
-#home, #project, #aboutus{
-    margin: 0 4.17vw 0 0;
-    padding: 8pt 0;
+.box{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 8pt 0;
+    padding: 0 4.17vw 0 0;
 }
 
-.button::after {
-    content: '';
-    width: 69px;
+
+#home, #project, #aboutus{
+    margin: 0;
+}
+
+.underline{
+    width: 65px;
     height: 6px;
     display: none;
     background-color: rgb(240,94,237);
@@ -80,11 +83,7 @@ body{
     bottom: 5vh;
 }
 
-#aboutus::after{
-    display: block;
-}
-
-#home:hover::after, #project:hover::after{
+#box3 .underline{
     display: block;
 }
 
@@ -118,8 +117,13 @@ body{
     height: 60vh;
     position: absolute;
     display: flex;
+    cursor: pointer;
 }
 
+#head_back{
+    background: url(./img/nameCard/Lu.png) no-repeat center / contain; left: -34.31%;
+    display: none;
+}
 #head{ background: url(./img/photo/Lu.png) no-repeat center / contain; left: -34.31%; }
 
 #tu_back{ 
@@ -152,6 +156,10 @@ body{
 }
 #lu{background: url(./img/photo/Lu.png) no-repeat center / contain; left: 91.81%;}
 
+#tail_back{
+    background: url(./img/nameCard/Tu.png) no-repeat center / contain; left: 117.09%;
+    display: none;
+}
 #tail{ background: url(./img/photo/Tu.png) no-repeat center / contain; left: 117.09%; }
 
 
@@ -201,15 +209,16 @@ body{
 
 .line{
     background-color:rgb(240,94,237);
-    width: 150px;
+    width: 9vw;
     height:7px;
     margin: 0 0 30px 0;
 }
 
 .info_box{
-    font-family: "Franklin Gothic Book";
+    font-family: "Microsoft JhengHei";
     font-size: 14pt;
-    width:100vw;
+    text-align: center;
+    width: 50vw;
     height: auto;
     display: flex;
     flex-direction:column;
@@ -217,6 +226,7 @@ body{
 }
 
 .info{
+    line-height: 40px;
     margin: 0;
 }
 
@@ -236,7 +246,7 @@ body{
     background: url(./img/photo/group.png) no-repeat center / contain;
     width: 68.48%;
     height: 100%;
-    transition: 0.75s;
+    transition: 0.5s;
     z-index: 1;
 }
 
@@ -276,7 +286,7 @@ body{
     background-color:white;
     color: rgb(123, 123, 123);
     width: 100vw;
-    height: 75pt;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items:center;
