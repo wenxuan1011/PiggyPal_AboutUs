@@ -232,7 +232,7 @@ body{
     width: 68.48%;
     height: 100%;
     transition: 0.75s;
-    z-index: 0;
+    z-index: 1;
 }
 
 .cu{
@@ -260,6 +260,7 @@ body{
 
 .group_pic:hover{
     opacity: 0.5 !important;
+    z-index: 0
 }
 
 

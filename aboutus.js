@@ -88,6 +88,9 @@ $("#lu_back").click(function(){
       $("#lu_back").fadeToggle("1500");
 });
 
+
+
+
 $(".cu").hover(function(){
     $(".group_pic").css("opacity", "0.5");
     $(".cu").css("z-index", "1");
