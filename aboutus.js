@@ -88,4 +88,3 @@ $('#arrow-right').click(function(){
     $('#head').css("left","-34.31%")
     $('#tail').css("left","117.09%")    
 })
-try
