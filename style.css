@@ -19,7 +19,7 @@ body{
 /*top bar part*/
 #navbar{
     font-family: "Franklin Gothic Demi";
-    font-size: 2.5vmax;
+    font-size: 18pt;
     color: white;
     height: 20vh;
     width: 100vw;
@@ -77,7 +77,7 @@ body{
     display: none;
     background-color: rgb(240,94,237);
     position: absolute;
-    bottom: 26px;
+    bottom: 5vh;
 }
 
 #aboutus::after{
@@ -120,6 +120,8 @@ body{
     display: flex;
 }
 
+#head{ background: url(./img/photo/Lu.png) no-repeat center / contain; left: -34.31%; }
+
 #tu_back{ 
     background: url(./img/nameCard/Tu.png) no-repeat center / contain; left: -9.03%; 
     display: none;
@@ -149,6 +151,9 @@ body{
     display: none;
 }
 #lu{background: url(./img/photo/Lu.png) no-repeat center / contain; left: 91.81%;}
+
+#tail{ background: url(./img/photo/Tu.png) no-repeat center / contain; left: 117.09%; }
+
 
 
 #arrow-left, #arrow-right{
@@ -190,7 +195,7 @@ body{
 
 #mot{
     font-family: "Franklin Gothic Demi";
-    font-size: 6vmin;
+    font-size: 18pt;
     margin: 0 0 18px 0;
 }
 
@@ -203,7 +208,7 @@ body{
 
 .info_box{
     font-family: "Franklin Gothic Book";
-    font-size: 5vmin;
+    font-size: 14pt;
     width:100vw;
     height: auto;
     display: flex;
@@ -267,7 +272,7 @@ body{
 /*bottom info part*/
 #bottom{
     font-family: "Franklin Gothic Book";
-    font-size: 4vmin;
+    font-size: 11pt;
     background-color:white;
     color: rgb(123, 123, 123);
     width: 100vw;
