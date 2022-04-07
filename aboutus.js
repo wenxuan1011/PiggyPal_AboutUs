@@ -10,6 +10,7 @@ $("#zhuang").click(function(){
 
 $("#zhuang_back").click(function(){
       $("#zhuang_back").css("transition-duration", "1.5s");
+      $("#zhuang").css("transition-duration", "1.5s");
       $("#zhuang_back").css("transform", "rotateY(180deg)");
       $("#zhuang").css("transform", "rotateY(0deg)");
       $("#zhuang").css("z-index", "1");
@@ -28,6 +29,7 @@ $("#tu").click(function(){
 
 $("#tu_back").click(function(){
       $("#tu_back").css("transition-duration", "1.5s");
+      $("#tu").css("transition-duration", "1.5s");
       $("#tu_back").css("transform", "rotateY(180deg)");
       $("#tu").css("transform", "rotateY(0deg)");
       $("#tu").css("z-index", "1");
@@ -46,6 +48,7 @@ $("#shen").click(function(){
 
 $("#shen_back").click(function(){
       $("#shen_back").css("transition-duration", "1.5s");
+      $("#shen").css("transition-duration", "1.5s");
       $("#shen_back").css("transform", "rotateY(180deg)");
       $("#shen").css("transform", "rotateY(0deg)");
       $("#shen").css("z-index", "1");
@@ -64,6 +67,7 @@ $("#huang").click(function(){
 
 $("#huang_back").click(function(){
       $("#huang_back").css("transition-duration", "1.5s");
+      $("#huang").css("transition-duration", "1.5s");
       $("#huang_back").css("transform", "rotateY(180deg)");
       $("#huang").css("transform", "rotateY(0deg)");
       $("#huang").css("z-index", "1");
@@ -82,6 +86,7 @@ $("#lu").click(function(){
 
 $("#lu_back").click(function(){
       $("#lu_back").css("transition-duration", "1.5s");
+      $("#lu").css("transition-duration", "1.5s");
       $("#lu_back").css("transform", "rotateY(180deg)");
       $("#lu").css("transform", "rotateY(0deg)");
       $("#lu").css("z-index", "1");
