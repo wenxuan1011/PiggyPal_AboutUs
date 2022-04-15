@@ -16,7 +16,7 @@ $("#project").hover(function(){
 });
 
 
-/*flip*/
+/*flip*/ 
 $("#zhuang").click(function(){
       $("#zhuang").css("transition-duration", "1.5s");
       $("#zhuang").css("transform", "rotateY(180deg)");
