@@ -1,3 +1,8 @@
+//<<<<<<< Updated upstream:app/aboutus.js
+
+//import jquery from '../jquery'
+//window.$ = window.jQuery = jquery
+
 /*navbar*/
 $("#home").hover(function(){
       $("#box1 .underline").fadeToggle("100");
@@ -16,6 +21,18 @@ $("#project").hover(function(){
 });
 
 
+//=======
+$('.pic').click({
+        centerMode:true,
+        centerPadding: '120px',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: true
+});
+
+//>>>>>>> Stashed changes:aboutus.js
 /*flip*/
 $("#zhuang").click(function(){
       $("#zhuang").css("transition-duration", "1.5s");
@@ -24,7 +41,7 @@ $("#zhuang").click(function(){
       $("#zhuang").css("z-index", "0");
       $("#zhuang_back").css("z-index", "1");
       $("#zhuang_back").fadeToggle("1500");
-});
+}) ;
 
 $("#zhuang_back").click(function(){
       $("#zhuang_back").css("transition-duration", "1.5s");
@@ -119,6 +136,7 @@ $(".cu").hover(function(){
     $(".cu").css("z-index", "2");
 }, function(){
     $(".group_pic").css("opacity", "1");
+//<<<<<<< Updated upstream:app/aboutus.js
     $(".cu").css("z-index", "0");
 });
 
@@ -228,4 +246,7 @@ $('#arrow-left').click(function(){
     $('#head_back').css("left","-34.31%")
     $('#tail').css("left","117.09%")
     $('#tail_back').css("left","-34.31%")   
-})
+  })
+//=======
+
+//>>>>>>> Stashed changes:aboutus.js
