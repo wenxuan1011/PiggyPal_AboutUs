@@ -6,29 +6,35 @@
     npm i jquery --save
     npm i parcel-bundler --save-dev
     npm i pug-cli --save-dev
-### 2.背景執行
-& 可以讓指令背景執行，所以可以同時watch pug和sass，達到部分parcel的目的
+### 2.創建一個 parcel 資料夾
+parcel資料夾裡放aboutus.pug, aboutus.sass, aboutus.js
 ```
-./node_modules/.bin/pug ./app/aboutus.pug -o ./ -P --watch &
+mkdir parcel
 ```
+### 3.aboutus.pug 連結 aboutus.sass 和 aboutus.js
+```pug
+link(href="./aboutus.sass", rel="stylesheet")
 ```
-./node_modules/.bin/node-sass ./app/aboutus.sass -o ./ -P --watch &
+```pug
+script(src="./aboutus.js")
 ```
-### 3.ps 和 kill
-ps 可以查看所有正在執行的job
+### 4.檔案架構 (PiggyPal目錄裡的架構)
+  ___parcel___aboutus.pug, aboutus.sass, aboutus.js<br>
+|<br>
+  ___dist (dist裡是放parcel打包完的檔案，圖片、html、css和js檔等都會打包在這個資料夾裡)<br>
+|<br>
+  ___img (img裡放web會用到的圖片)
+### 5.進行打包
+用下列指令打包我們的檔案 (自動產生 dist目錄)<br>
+執行此指令時，當我們修改pug, sass和 js檔時，會立刻打包新的檔案出來<br>
+記得下 --public-url ./ 這個參數，根據官方文件的說明，這個參數的default值是 / ，可能會導致我們的路徑出問題
 ```
-ps
+./node_modules/.bin/parcel watch ./parcel/aboutus.pug --public-url ./
 ```
-kill 可以關閉正在執行的job
+多加 --host [host] 及 --port [port] 會產生一個測試的網站給我們看，當我們改變檔案時，會立刻顯示結果給我們看<br>
+[host] 記得改成 luffy.ee.ncku.edu.tw<br>
+[port] 可以自己選
 ```
-kill
+./node_modules/.bin/parcel watch ./parcel/aboutus.pug --public-url ./ --host [host] --port [port]
 ```
-### 4.使用 node ser.js 開啟伺服器
-```
-node ser.js
-```
-### 5.遇到的問題
-當我們執行以下指令時，貌似是路徑問題導致無法同步更新
-```
-./node_modules/.bin/parcel watch ./app/aboutus.pug
-```
+### 6.連到dist裡的html測試功能
