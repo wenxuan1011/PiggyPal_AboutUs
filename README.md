@@ -38,4 +38,4 @@ script(src="./aboutus.js")
 ./node_modules/.bin/parcel watch ./parcel/aboutus.pug --public-url ./ --host [host] --port [port]
 ```
 ### 6.連到dist裡的html測試功能
-點擊下面的網址可進到我們的 about us：
+點擊下面的網址可進到我們的 about us： https://luffy.ee.ncku.edu.tw/~wenxuan/PiggyPal/dist/aboutus.html
