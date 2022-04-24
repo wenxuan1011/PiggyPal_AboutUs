@@ -7,14 +7,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+https://github.com/wenxuan1011/PiggyPal.git",
+  "repository": "git+https://github.com/wenxuan1011/PiggyPal_AboutUs.git",
   "keywords": [],
   "author": "yitengzhuang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wenxuan1011/PiggyPal/issues"
+    "url": "https://github.com/wenxuan1011/PiggyPal_AboutUs/issues"
   },
-  "homepage": "https://github.com/wenxuan1011/PiggyPal#readme",
+  "homepage": "https://github.com/wenxuan1011/PiggyPal_AboutUs#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "parcel-bundler": "^1.12.5",
